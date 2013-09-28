@@ -1,0 +1,20 @@
+{
+  "name": "frontendfirst.com",
+  "version": "0.0.0",
+  "homepage": "https://github.com/JakubMrozek/frontendfirst.com",
+  "authors": [
+    "Jakub Mrozek <jakub.mrozek@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.0.0"
+  }
+}

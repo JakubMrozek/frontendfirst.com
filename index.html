@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Development stack</a></li>
+            <li><a href="#">Mockapito</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div>
+        <h1>Frontend First!</h1>
+        <p>The Frontend First! methodology is a new revolutionary way of development which allows for applications to be developed in a completely different way.</p>
+      </div>
+
+      <p>According to this methodology, the full front-end <em>without</em> server side is completed first.
+      <p>This way of development has a lot of has a lot of advantages. The most important advantage is the speed at which developers can implement changes from users. They can create a small part of the application and get feedback from users as soon as possible.</p>
+
+      <p><a class="btn btn-success" href="#">Haven't you heard about the Frontend First! methodology? Read an introduction to it!</a></p>
+
+      <!--
+
+
+
+      <p><em>The following text is from my presentation at the WebExpo conference, 2013.</em></p>
+
+
+      <h2>The problem</h2>
+
+      <p>Do you know how many projects are considered unsuccessful even before they are launched? An unsuccessful project means that it is not launched on time, or that it is not within the planned cost, or it doesn’t have all of the required features. The answer is approximately <strong>70%</strong>! (CHAOS Summary 2009 report by The Standish Group based on a survey of 400 organizations) This means that <em>only</em> 3 out of 10 projects are launched on time, within the planned cost and have all of the required features. Some research suggests even worse statistics, up to 90%! Huge numbers, right?!</p>
+
+      <p>So why is it that so many projects fail? There are a lot of reasons, of course. Lack of senior management involvement, poor techniques for gathering requirements and so on. But there is one reason that is a little bit more consistent than the rest: <strong>constant changes</strong>.</p>
+      <p>It is normal for our customers to want changes after they have seen the developed software for the first time. But constant changes are very expensive. Especially when the database schema needs to be changed. It has such a high impact on the rest of the application and of course on the total price, not to mention the release date is usually missed as well. A lot of techniques are used to minimize the number of changes. But we can’t afford changes in any case. We need a way to apply changes with minimal cost.</p>
+
+      <p>Single-page application (SPA) architecture and a methodology called Frontend First! is what we are looking for.</p>
+
+
+      <h2>What are Single-page Applications?</h2>
+
+      <p>The main difference between single-page applications and traditional applications is that an SPA moves logic
+      from the server to the client. The complete application logic is written with client-side technology, mainly
+      with JavaScript, and runs within the browser. All necessary code (HTML,
+      JavaScript, and CSS) is retrieved with a single page load, or the appropriate
+      resources are dynamically loaded and added to the page as necessary, usually as
+      a response to a user’s&nbsp;actions (<a href="http://en.wikipedia.org/wiki/Single-page_application">Wikipedia</a>).</p>
+
+      <p>A&nbsp;very good and famous example is Gmail, which is available in two main versions.</p>
+
+      <h3>Traditional application</h3>
+
+      <p>For old browsers, for example, Internet Explorer 6, there is a traditional
+      application without JavaScript. When
+      users wanted to see another page and clicked on a link, they were redirected to
+      that page. The entire request was processed on the server and the full HTML was
+      sent to the browser as one unit. This means that the header, menu and footer was
+      loaded for every request, again and again. This is what I&nbsp;call the traditional
+      application.</p>
+
+      <h3>Modern application</h3>
+
+      <p>For modern browsers, there is a much more user friendly single page
+      application available. So if
+      you bring up Gmail with a modern browser, the javascript framework with all
+      other nescessary code will be loaded first and then the homepage will be
+      rendered.</p>
+
+      <p>Now let’s&nbsp;say that you would like to see an unread e-mail. So you click on
+      the subject of an e-mail. The javascript framework registers that event and
+      sends an HTTP request to the server via AJAX via the REST API. The server only
+      needs to verify that the user has access to that specific e-mail and forwards
+      the request to the database. Now the e-mail data are retrieved from the database
+      and sent back to the browser. The JavaScript framework loads the template for
+      the e-mail detail and the template is rendered with the retrieved data. In
+      addition, the response can be stored, for example, in the HTML5 LocalStorage. So
+      if the user wants to read the e-mail again, the application doesn’t need to
+      resend a query to the server and can get the data straight from
+      LocalStorage.</p>
+
+      <p>Very important is that the server response contains only the data required
+      for that page. It doesn’t contain the header, menu or footer, because they
+      were retrieved and added to the page before. This is how a single page
+      application&nbsp;works.</p>
+
+      <h2>A Brief Introduction to the Frontend First! Methodology </h2>
+
+      <p>First, let me tell you a short story. I&nbsp;was a student at the University of Economics in Prague.
+      Many years ago, I&nbsp;walked for lectures about programming and databases. The speaker talked about how applications should
+      be developed.</p>
+
+      <p>First we should define all of the entities. For example, in an e-shop, it
+      would be products, categories or orders. Then we define the relationships of the
+      entities and create a database schema. Finally we program the application code.
+      It does not matter whether you use an earlier rigorous methodology, or a new
+      modern agile methodology: the principle is the same. First we create a database
+      schema and then we create the code, which is dependent on the database.<p>
+
+      <p>As I&nbsp;said at the beginning of this talk&nbsp;&ndash; changes in the database schema are
+      very expensive! And the changes will come! Once the whole, or a part of the
+      application is finished, and once users see it and start using it, they will
+      want changes. And changes are very likely to be reflected in the database
+      schema. This kind of development is slow, because changes at this stage are much
+      more expensive than on paper during analysis. This is one of the biggest
+      problems with developing applications and has a big impact on the total price
+      and often results in a missed release&nbsp;date.</p>
+
+
+      <p>The methodology of Frontend First! can solve this problem. According to this
+      methodology, the full front-end is completed first. All of the logic is written
+      on the client side in the browser, so we only need the server for retrieving
+      data from database, right? All requests go through one central point, which is
+      the REST API. So all requests can be caught at this point and instead of sending
+      a real HTTP request to the server and waiting for a response, we can simply
+      respond with mock&nbsp;data.</p>
+
+      <p>The front-end does not know that it is working with mock data only. It works
+      with the mock data just the same as it would with real data. Essentially, the
+      creation of mock data is very simple and it is significantly faster than
+      developing the server part of the program. And of course, changes only take a
+      few seconds.</p>
+
+      <p>Consider the example with Gmail that we saw before, when the user wanted to
+      see an unread e-mail. The user clicks on the e-mail subject. The JavaScript
+      framework registers the event and normally it would try to send a request to the
+      server. But now, instead of sending the actual request, the framework returns
+      only a mock object with information about a fake e-mail. The JavaScript
+      framework now loads the template and renders it with the received data. So it
+      behaves in the exact same way as if the data were obtained from the
+      database.</p>
+
+      <p>Now let’s&nbsp;say we present the application to our customer. They can play
+      with it, it is the real application, it just doesn’t have a server part yet,
+      so all data are mock data&nbsp;only.</p>
+
+      <p>The customer sees the detail of the fake e-mail and let’s&nbsp;say that they
+      have a special requirement. They would like to see more information about the
+      sender, for example how many e-mails they have sent to the receiver before, or
+      their last twitter messages, or information about their birthday and which food
+      they like the most.</p>
+
+      <p>In this example, we only need to change the mock data. We add the new four
+      required properties to the mock response and change the template. So instead of
+      the first object, the application will receive the newly revised object.</p>
+
+      <p>Changing mock object data takes us only a few seconds instead of the minutes
+      or hours that we would need to spend for changing the database schema and
+      application logic. This is why this way of development is much faster and why
+      customers will love you, because all of their requirements and dreams can be implemented
+      very fast. While the database schema was previously designed first, now the
+      structure of the API is designed&nbsp;first.</p>
+
+
+
+      <h2>Advantanges</h2>
+
+      <h3>Fast changes implementation</h3>
+
+        <p>Probably the most important advantage is the speed at which we can implement
+        changes from users. We create a small part of the application and get feedback
+        from users as soon as possible. We want to know if everything is alright and if
+        something is wrong, it can be fixed immediately. Users can test a real
+        application&nbsp;&ndash; an application which is what they are actually going
+        to&nbsp;get.</p>
+
+        <p>A&nbsp;good example is a CRM application, which I&nbsp;started to make a few months
+        ago for a marketing company. A&nbsp;detailed specification already existed before
+        I&nbsp;joined the team. By the time that we had finished the first screen and some
+        basic functionality and the client started using the application, he already
+        wanted a lot of changes. So within two months, the application was completely
+        different than the one that was originally designed. If we had been programming
+        the classic way, the database would have been constantly changing and it would
+        have been very expensive. But we didn’t have a database yet, and so the
+        changes were implemented&nbsp;fast.</p>
+
+    <h3>Offline working</h3>
+
+    <p>This is what I&nbsp;really love. If you are still in doubt about single-page
+    apps, this should persuade you definitely, because this is something that
+    can’t be done in a traditional application: Offline working.</p>
+
+<p>What kind of people do you think would like to use Lingano? We think that our
+main target group will be students. For example Peter. Do you know Peter? He was
+a student at this university. He had an exam for a foreign language course. Of
+course, he had more interesting things to do then learning a foreign language,
+the nights before the exam&nbsp;&ndash; like parties or playing games&nbsp;&ndash; so he left
+learning vocabulary to the morning. In the morning on his way to school by the
+metro he wanted to prepare for the exam, so he started up his
+phone’s&nbsp;internet browser to use some traditional web application and …
+nothing. There wasn’t an internet connection. So he wasn’t able to prepare
+for the exam and he failed. Actually, he was thrown out of the university so he
+became homeless. You can see him after you leave this conference today around
+main railway station. He is sitting on the platform and still crying, it is
+really&nbsp;sad.</p>
+
+<p>But Peter didn’t have to become homeless. Single-page applications could
+have solved his problem, because HTML5 supports Application Cache. It is very
+stable and supported by all browsers, all Android and iOS versions support this.
+How does AppCache work? When a user first visits your application, all necessary
+templates, javascript, and CSS are downloaded onto the background and locally
+saved. Then, if there is no internet connection, we can still use the
+application as long as the data were saved locally before. A&nbsp;good example of
+this is Lingano. When you first visit this app, all templates are downloaded
+onto the background and saved. Data are normally retrieved via REST API. If a
+user starts to learn some vocabulary, this vocabulary is saved in the local
+storage. So when users travel by the metro and want to learn foreign words, the
+application detects that the user is offline and the request for data will not
+be sent to the API, rather it will be loaded from the local storage. Users can
+still use Lingano even without an internet connection, and when the user is
+online again, data from their local storage can be synchronized with the server.
+Offline working is very important for Lingano. Nobody cares about an application
+that can’t work offline, it is very limited; and people need to use Lingano
+everywhere. Realistically, if Lingano didn’t support offline working, people
+would choose a different application.</p>
+
+<p>There are also some interesting projects, which can be helpful when creating
+offline applications. One of them is PouchDB, the JavaScript Database inspired
+by CouchDB, that is designed to run well within the browser. PouchDB was created
+to help web developers build applications that work equally as well offline as
+they do online. It enables applications to store data locally while offline, and
+then synchronise it with CouchDB and compatible servers when the application is
+back online, keeping the user's&nbsp;data in sync no matter where they
+login&nbsp;next.</p>
+
+-->
+
+
+
+    </div> <!-- /container -->
+
+    <script src="bower_components/jquery/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-44427470-1', 'frontendfirst.com');
+      ga('send', 'pageview');
+
+    </script>
+    </body>
+</html>

@@ -30,11 +30,8 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Development stack</a></li>
-            <li><a href="#">Mockapito</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/contact.html">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -42,32 +39,29 @@
 
     <div class="container">
 
-      <div>
+      <div class="jumbotron">
         <h1>Frontend First!</h1>
         <p>The Frontend First! methodology is a new revolutionary way of development which allows for applications to be developed in a completely different way.</p>
       </div>
 
-      <p>According to this methodology, the full front-end <em>without</em> server side is completed first.
-      <p>This way of development has a lot of has a lot of advantages. The most important advantage is the speed at which developers can implement changes from users. They can create a small part of the application and get feedback from users as soon as possible.</p>
+      <p class="introduction">According to this methodology, the full front-end <em>without</em> server side is completed first. This way of development has a lot of has a lot of advantages. The most important advantage is the speed at which developers can implement changes from users. They can create a small part of the application and get feedback from users as soon as possible.</p>
 
-      <p><a class="btn btn-success" href="#">Haven't you heard about the Frontend First! methodology? Read an introduction to it!</a></p>
+      <hr>
 
-      <!--
+      <p class="alert alert-info">The following text is from my presentation at the WebExpo conference, 2013.</p>
 
-
-
-      <p><em>The following text is from my presentation at the WebExpo conference, 2013.</em></p>
-
+      <hr>
 
       <h2>The problem</h2>
 
-      <p>Do you know how many projects are considered unsuccessful even before they are launched? An unsuccessful project means that it is not launched on time, or that it is not within the planned cost, or it doesn’t have all of the required features. The answer is approximately <strong>70%</strong>! (CHAOS Summary 2009 report by The Standish Group based on a survey of 400 organizations) This means that <em>only</em> 3 out of 10 projects are launched on time, within the planned cost and have all of the required features. Some research suggests even worse statistics, up to 90%! Huge numbers, right?!</p>
+      <p>Do you know how many projects are considered unsuccessful even before they are launched? An unsuccessful project means that it is not launched on time, or that it is not within the planned cost, or it doesn’t have all of the required features. The answer is approximately <strong title="CHAOS Summary 2009 report by The Standish Group based on a survey of 400 organizations">70%</strong>! This means that <em>only</em> 3 out of 10 projects are launched on time, within the planned cost and have all of the required features. Some research suggests even worse statistics, up to 90%! Huge numbers, right?!</p>
 
       <p>So why is it that so many projects fail? There are a lot of reasons, of course. Lack of senior management involvement, poor techniques for gathering requirements and so on. But there is one reason that is a little bit more consistent than the rest: <strong>constant changes</strong>.</p>
       <p>It is normal for our customers to want changes after they have seen the developed software for the first time. But constant changes are very expensive. Especially when the database schema needs to be changed. It has such a high impact on the rest of the application and of course on the total price, not to mention the release date is usually missed as well. A lot of techniques are used to minimize the number of changes. But we can’t afford changes in any case. We need a way to apply changes with minimal cost.</p>
 
       <p>Single-page application (SPA) architecture and a methodology called Frontend First! is what we are looking for.</p>
 
+      <hr>
 
       <h2>What are Single-page Applications?</h2>
 
@@ -80,7 +74,7 @@
 
       <p>A&nbsp;very good and famous example is Gmail, which is available in two main versions.</p>
 
-      <h3>Traditional application</h3>
+      <h3>Traditional applications</h3>
 
       <p>For old browsers, for example, Internet Explorer 6, there is a traditional
       application without JavaScript. When
@@ -90,7 +84,7 @@
       loaded for every request, again and again. This is what I&nbsp;call the traditional
       application.</p>
 
-      <h3>Modern application</h3>
+      <h3>Modern applications</h3>
 
       <p>For modern browsers, there is a much more user friendly single page
       application available. So if
@@ -115,7 +109,11 @@
       were retrieved and added to the page before. This is how a single page
       application&nbsp;works.</p>
 
+      <hr>
+
       <h2>A Brief Introduction to the Frontend First! Methodology </h2>
+
+      <p>Now I am now going to talk about way of development which allows for applications to be developed in a completely different way. It’s called "Frontend First!".</p>
 
       <p>First, let me tell you a short story. I&nbsp;was a student at the University of Economics in Prague.
       Many years ago, I&nbsp;walked for lectures about programming and databases. The speaker talked about how applications should
@@ -182,28 +180,59 @@
       very fast. While the database schema was previously designed first, now the
       structure of the API is designed&nbsp;first.</p>
 
-
+      <hr>
 
       <h2>Advantanges</h2>
 
+      <p>This way of development has a lot advantages. I&nbsp;will be talking about them
+      in the next few minutes. I&nbsp;will show you some real life examples, one of which
+      is a little bit special. It’s&nbsp;Lingano.</p>
+
+      <p>A&nbsp;year ago, I&nbsp;really needed to learn a lot of vocabulary in multiple
+      languages. We have an obligation to attend four English courses and two other
+      foreign language courses at the university. Of course, I&nbsp;left everything to
+      the last semester… I&nbsp;was looking for an application that would help me to
+      absorb all of the vocabulary I&nbsp;needed, but couldn’t find anything that met
+      all of my&nbsp;needs.</p>
+
+      <p>So I&nbsp;started to create Lingano, a project to help me with learning
+      vocabulary. It was a simple application, only for me, but a few days ago I&nbsp;told
+      my friend, Daniel Suchy, about it and we decided to improve this project and
+      make it public for everyone. It is a single page application developed with
+      methodology Frontend First! We have implemented only a frontend part without an
+      API and in the next few days we plan on finishing&nbsp;it.</p>
+
+      <p>So what advantages do we have?</p>
+
       <h3>Fast changes implementation</h3>
 
-        <p>Probably the most important advantage is the speed at which we can implement
-        changes from users. We create a small part of the application and get feedback
-        from users as soon as possible. We want to know if everything is alright and if
-        something is wrong, it can be fixed immediately. Users can test a real
-        application&nbsp;&ndash; an application which is what they are actually going
-        to&nbsp;get.</p>
+      <p>Probably the most important advantage is the speed at which we can implement
+      changes from users. We create a small part of the application and get feedback
+      from users as soon as possible. We want to know if everything is alright and if
+      something is wrong, it can be fixed immediately. Users can test a real
+      application&nbsp;&ndash; an application which is what they are actually going
+      to&nbsp;get.</p>
 
-        <p>A&nbsp;good example is a CRM application, which I&nbsp;started to make a few months
-        ago for a marketing company. A&nbsp;detailed specification already existed before
-        I&nbsp;joined the team. By the time that we had finished the first screen and some
-        basic functionality and the client started using the application, he already
-        wanted a lot of changes. So within two months, the application was completely
-        different than the one that was originally designed. If we had been programming
-        the classic way, the database would have been constantly changing and it would
-        have been very expensive. But we didn’t have a database yet, and so the
-        changes were implemented&nbsp;fast.</p>
+      <p>Lingano is a very experimental project. We have many ideas about how to help
+      people with learning foreign languages, but which ideas are right and which
+      wrong? We won’t find the right solution without asking to other people. So
+      when we created the simplest version of Lingano with only a mock API, we started
+      to ask people what they thought about it and they gave us very good comments,
+      some of which were immediately implemented. Based on this feedback, we have
+      totally changed the main tool for learning words. The most important point that
+      it only took us 4&nbsp;days to create the complete front-end before we were able to
+      start with user testing, and changes took us only a few minutes in
+      this&nbsp;phase.</p>
+
+      <p>A&nbsp;good example is a CRM application, which I&nbsp;started to make a few months
+      ago for a marketing company. A&nbsp;detailed specification already existed before
+      I&nbsp;joined the team. By the time that we had finished the first screen and some
+      basic functionality and the client started using the application, he already
+      wanted a lot of changes. So within two months, the application was completely
+      different than the one that was originally designed. If we had been programming
+      the classic way, the database would have been constantly changing and it would
+      have been very expensive. But we didn’t have a database yet, and so the
+      changes were implemented&nbsp;fast.</p>
 
     <h3>Offline working</h3>
 
@@ -211,52 +240,141 @@
     apps, this should persuade you definitely, because this is something that
     can’t be done in a traditional application: Offline working.</p>
 
-<p>What kind of people do you think would like to use Lingano? We think that our
-main target group will be students. For example Peter. Do you know Peter? He was
-a student at this university. He had an exam for a foreign language course. Of
-course, he had more interesting things to do then learning a foreign language,
-the nights before the exam&nbsp;&ndash; like parties or playing games&nbsp;&ndash; so he left
-learning vocabulary to the morning. In the morning on his way to school by the
-metro he wanted to prepare for the exam, so he started up his
-phone’s&nbsp;internet browser to use some traditional web application and …
-nothing. There wasn’t an internet connection. So he wasn’t able to prepare
-for the exam and he failed. Actually, he was thrown out of the university so he
-became homeless. You can see him after you leave this conference today around
-main railway station. He is sitting on the platform and still crying, it is
-really&nbsp;sad.</p>
+    <p>What kind of people do you think would like to use Lingano? We think that our
+    main target group will be students. For example Peter. Do you know Peter? He was
+    a student at this university. He had an exam for a foreign language course. Of
+    course, he had more interesting things to do then learning a foreign language,
+    the nights before the exam&nbsp;&ndash; like parties or playing games&nbsp;&ndash; so he left
+    learning vocabulary to the morning. In the morning on his way to school by the
+    metro he wanted to prepare for the exam, so he started up his
+    phone’s&nbsp;internet browser to use some traditional web application and …
+    nothing. There wasn’t an internet connection. So he wasn’t able to prepare
+    for the exam and he failed. Actually, he was thrown out of the university so he
+    became homeless. You can see him after you leave this conference today around
+    main railway station. He is sitting on the platform and still crying, it is
+    really&nbsp;sad.</p>
 
-<p>But Peter didn’t have to become homeless. Single-page applications could
-have solved his problem, because HTML5 supports Application Cache. It is very
-stable and supported by all browsers, all Android and iOS versions support this.
-How does AppCache work? When a user first visits your application, all necessary
-templates, javascript, and CSS are downloaded onto the background and locally
-saved. Then, if there is no internet connection, we can still use the
-application as long as the data were saved locally before. A&nbsp;good example of
-this is Lingano. When you first visit this app, all templates are downloaded
-onto the background and saved. Data are normally retrieved via REST API. If a
-user starts to learn some vocabulary, this vocabulary is saved in the local
-storage. So when users travel by the metro and want to learn foreign words, the
-application detects that the user is offline and the request for data will not
-be sent to the API, rather it will be loaded from the local storage. Users can
-still use Lingano even without an internet connection, and when the user is
-online again, data from their local storage can be synchronized with the server.
-Offline working is very important for Lingano. Nobody cares about an application
-that can’t work offline, it is very limited; and people need to use Lingano
-everywhere. Realistically, if Lingano didn’t support offline working, people
-would choose a different application.</p>
+    <p>But Peter didn’t have to become homeless. Single-page applications could
+    have solved his problem, because HTML5 supports Application Cache. It is very
+    stable and supported by all browsers, all Android and iOS versions support this.
+    How does AppCache work? When a user first visits your application, all necessary
+    templates, javascript, and CSS are downloaded onto the background and locally
+    saved. Then, if there is no internet connection, we can still use the
+    application as long as the data were saved locally before.</p>
 
-<p>There are also some interesting projects, which can be helpful when creating
-offline applications. One of them is PouchDB, the JavaScript Database inspired
-by CouchDB, that is designed to run well within the browser. PouchDB was created
-to help web developers build applications that work equally as well offline as
-they do online. It enables applications to store data locally while offline, and
-then synchronise it with CouchDB and compatible servers when the application is
-back online, keeping the user's&nbsp;data in sync no matter where they
-login&nbsp;next.</p>
+    <p>A&nbsp;good example of
+    this is Lingano. When you first visit this app, all templates are downloaded
+    onto the background and saved. Data are normally retrieved via REST API. If a
+    user starts to learn some vocabulary, this vocabulary is saved in the local
+    storage. So when users travel by the metro and want to learn foreign words, the
+    application detects that the user is offline and the request for data will not
+    be sent to the API, rather it will be loaded from the local storage. Users can
+    still use Lingano even without an internet connection, and when the user is
+    online again, data from their local storage can be synchronized with the server.
+    Offline working is very important for Lingano. Nobody cares about an application
+    that can’t work offline, it is very limited; and people need to use Lingano
+    everywhere. Realistically, if Lingano didn’t support offline working, people
+    would choose a different application.</p>
 
--->
+    <p>There are also some interesting projects, which can be helpful when creating
+    offline applications. One of them is PouchDB, the JavaScript Database inspired
+    by CouchDB, that is designed to run well within the browser. PouchDB was created
+    to help web developers build applications that work equally as well offline as
+    they do online. It enables applications to store data locally while offline, and
+    then synchronise it with CouchDB and compatible servers when the application is
+    back online, keeping the user's&nbsp;data in sync no matter where they
+    login&nbsp;next.</p>
+
+    <h3>Postpone some important decisions</h3>
+
+    <p>Another advantage is the possibility to postpone some important decisions
+    about the architecture of the application until the end of the development. For
+    example, the decision about what database to use. Because the entire application
+    is developed with mock data, when the first version of the client application is
+    ready, we have all of the API structure. We know the exact demands which will be
+    placed on our database. And then we can make the best choice about which type of
+    database to use. The classic SQL database? Or one of the NoSQL databases? At the
+    beginning of the development, we don’t have to consider this question or make
+    uninformed decisions.</p>
+
+    <p>I&nbsp;am currently working on a project called JakSeLibime.cz. It’s&nbsp;an
+    application which researches how people perceive attractiveness. Users rate
+    photos of people of the opposite sex. Then, from these results, data is
+    generated for statistics. This application is very experimental and abstract. At
+    the beginning of the project, I&nbsp;had no idea about which database would be the
+    best for the project, because the specification was constantly changing. I&nbsp;did
+    not know what the structure of the required data would look like. Later,
+    I&nbsp;found out that it was perfectly suited for a graph database, which is what
+    I&nbsp;am now implementing. At the beginning of the development I&nbsp;could not be
+    sure. It was advantageous that I&nbsp;was able to postpone this decision until
+    the&nbsp;end.</p>
+
+    <p>Designing applications is similar. In the beginning, I&nbsp;develop an
+    application with a Bootstrap or Foundation Zurb CSS framework. During the
+    development the user interface is naturally constantly changing. At the end of
+    development it is obvious exactly what the application should look like. Then
+    the specific graphics are implemented. We know the exact structure of the user
+    interface. If we do a design in the beginning, it often results in many changes
+    in graphics. Then the design doesn’t look good after all of those changes. So
+    I’ve seen that the design must be remade from scratch many&nbsp;times.</p>
+
+    <h3>UX and performance</h3>
+
+   <p>The most frequently mentioned advantage of SPAs is a better user experience. User experience is greatly influenced by the performance of the application. And since the logic of the entire application runs on the client’s browser, the server side is not so busy. This makes the cost of running applications much lower.</p>
+
+   <p>Two years ago, LinkedIn switched its mobile version from Ruby On Rails to Node.js, and the entire application was built as an SPA. The savings were huge. Previously, they used 15 servers with 15 virtual servers on each physical machine. After the upgrade, they only needed 4 virtual servers that can handle double traffic. This is a tremendous cost savings.</p>
+
+   <h3>REST API</h3>
+
+   <p>Single-page applications usually consist of two independent parts: the front-end part and the REST API, which only forwards requests to a database. Some applications can communicate directly from frontend with a remote database via REST API. For example, the famous NoSQL database ElasticSearch has REST API, so we can communicate with it straight from the client side, and we don’t even need to build a server side for the application. Another example is MongoLab, DaaS  (database as a service), which offer REST API for access to MongoDB database data.</p>
+
+   <p>When we build a single-page application, we usually create three different projects: the first one is the front-end for common users, the second one is the administration and the third one is the API for the server part. This is great, because all other applications can communicate with us via the same REST API, so if we create a special native app for mobile later, this app can use the same API again and we don’t need to spend time building a special server part for the mobile app, which is definitely great.</p>
+   <p>These are the major advantages of using the SPA and Frontend First! methodology. There are many more advantages, but these are the most important.</p>
+
+   <hr>
+
+  <h2>Recommend tools</h2>
+
+   <p>The next part of my talk will be about the development stack, which we use for our projects. We use AngularJS for the client side and Node.js for the server side. But there are some other great tools and technologies, which I would like to talk about. Some of these tools are useful not only for SPA, but I have decided to talk about them because I believe a complete ecosystem is the most important.</p>
+
+  <h3>Nodejitsu</h3>
+
+  <p>Our projects are usually hosted on Nodejitsu. I have never seen a cloud hosting, where I can deploy my application so easily. Every time I need to release a new version of the application publicly, I only need type this command: jitsu deploy. Jitsu is a special npm program for communication with Nodejitsu. All dependencies are specified in a configuration file package.json including commands for compiling the TypeScript files or downloading dependencies with Bower, for example.</p>
+  <p>One simple command for everything, it is so easy. Nodejitsu has many other great and important features, for example every time when you release a new public version, a snapshot of the current version is created. So if something is wrong, you can easily go back. Or you can have your own private npm repository here, which is very useful.</p>
 
 
+  <h3>Bower, ComponentJS and npm</h3>
+
+  <p>For package management, we use 3 tools. On the server side, there is of course a great Node Package Manager. On the client side, we use two tools: Bower from Twitter and ComponentJS from TJ Holowaychuk.</p>
+  <p>Bower is the standard now. There are more than four thousand components available in the repository. We manage all AngularJS modules, Angular UI and Twitter Bootstrap by Bower. When you need to download a library, just type this command and it will be downloaded. When you want update a library, just type this and that’s all.</p>
+  <p>We also use ComponentJS, which was released a year ago. There are more than thousand components now. These components are usually very small and solve simple tasks like file uploading, resizing images or handling local storage. That is why we don’t need to use libraries like jQuery, because when we need some special jQuery function, it is available in ComponentJS and so we don’t need to download the full jQuery library when we just want to use some simple feature.</p>
+
+  <h3>Testing tools</h3>
+
+  <p>I also need some tools for testing. In most of my single-page applications, I use 3 types of tests.</p>
+  <p>The first type is unit tests. I do not try to have 100% of the application covered with unit tests, but there are some features of the application which should be covered with them. Especially when a feature is frequently changed or has many different inputs. There are many JavaScript frameworks for unit tests, I think the best is Mocha. It supports many assertion styles, synchronous and asynchronous tests and exports for continuous integration.</p>
+  <p>The second type of tests are integration tests. I use them for testing APIs and I use the tool Supertest for them. The package Supertest is designed for the Node framework Express, which is also used by LinkedIn and MySpace. This is how our integration tests look when we test a special API resource. Supertest creates an instance of our Express app and calls some URLs, then it compares the retrieved information like the HTTP code, headers and body content with the expected values.</a>
+  <p>For our AngularJS app, we use E2E tests with a special AngularJS tool Scenario Runner. This tool is very similar to Selenium. It tries to simulate user actions. For example we have this scenario: a user go to the detail of some vocabulary, then they click on its name, change the name and save it. And then we test if everything was alright and if the name of the vocabulary was really changed.</p>
+  <p>We need to run these unit or E2E tests in browser environments and this is why we also use a tool called Karma, previously known as Testacular. It is a test runner for JavaScript and with this tool we can automatically run tests within the most popular browsers. Karma has many useful options, one of them is autoWatch directive. Whenever I work on an application I'm developing, I also start Karma with autoWatch so that every time the file is saved, all tests are run and I can immediately verify that the changes didn’t break the other features.</p>
+  <p>To run our tests automatically, we need continuous integration tools. There are many of them, for example Jenkis is very famous. But we use Travis CI for several reasons, the most important reason being that it is supported by Nodejitsu and is very simple. When you want to start with Trevis CI on Nodejitsu, you only need a few minutes. Trevis is free for open source, but there are also plans for private repositories.</p>
+
+  <h3>Other tools</h3>
+
+  <p>We use the CSS preprocessor LESS and framework Bootstrap. A few days ago a new version of Bootstrap, the third version, was released and this version is mobile first. All of my applications in the last year have been built with Bootstrap and the changes made in the third version are also very important for Lingano because we have a free mobile version of our app.</p>
+  <p>A great tool for scaffolding is Yeoman. When you develop a single-page or any other application, you need to do several tasks again and again. For example if you want to create a new controller, you have to create a new file, add the path of this file to the layout template, create a new template for the controller view and so on. It is boring to repeat these tasks and that is why Yeoman exists. Yeoman can help you to create a generator for these tasks or you can use one of the many pre-existing generators. You can find generators there for Angular, Ember or Backbone and these generators can be modified for your specific requirements.</p>
+  <p>Grunt is very important tool for building single page apps. It is a JavaScript task runner. It has a repository with many plugins which you can immediately use. Grunt is helpful for tasks like minifications, compiling LESS, livereload features, and compiling CoffeeScript files with the support of JsHint to check coding standards. Today, there are more than a thousand similar plugins.</p>
+
+  <hr>
+
+  <h2>Summary</h2>
+
+  <p>Now It’s time for a short summary of key points of this talk.</p>
+  <p>The most important message from this talk for you is that building single page apps is really simple today. We have a lot of great tools. A great ecosystem. I talked about Nodejitsu- only one simple command and your application is up. Bower and ComponetJS with thousands of components, or tools like Grunt or Yeoman with thousands of plugins. JavaScript is everywhere, it is the most used language on Github and there are millions of projects.</p>
+  <p>Single-page applications allow developers to build apps in totally different ways and has a lot of advantages. I talked about the Frontend First! methodology, where you first create a complete frontend without a server side. The most important advantage is the speed at which you can implement changes from users. You can create a small part of the application and get feedback from users as soon as possible.</p>
+  <p>The ability to have an offline version is also very important and it is a killer feature of single-page apps. Nobody cares about applications that don’t work offline. If an application doesn’t work offline, people will just find a different application that does.</p>
+  <p>When you plan building an application in the future, seriously consider single page architecture. I believe, you will fall in love with it as I have.</p>
+
+  <hr>
 
     </div> <!-- /container -->
 

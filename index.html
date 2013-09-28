@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Frontend First!</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -180,6 +180,10 @@
       very fast. While the database schema was previously designed first, now the
       structure of the API is designed&nbsp;first.</p>
 
+      <p>This way of development requires a tool for the design of our REST API. To achieve this we can use a tool called <a href="http://apiary.io/">Apiary</a>. Apiary is a Czech startup that facilitates the development of an API. Most importantly, APIs can be beautifully and very simply designed here.</p>
+
+      <p>I also have my own project called <a href="https://github.com/JakubMrozek/mockapito">Mockapito</a>, which is a special tool for API creation that is fully compatible with Apiary and which solves some issues like dynamic responses, or in the future it will be working with server-side events or websockets. It is not ready for public use today, but I hope to introduce it publicly in a few weeks, so stay tuned.</p>
+
       <hr>
 
       <h2>Advantanges</h2>
@@ -195,9 +199,9 @@
       absorb all of the vocabulary I&nbsp;needed, but couldn’t find anything that met
       all of my&nbsp;needs.</p>
 
-      <p>So I&nbsp;started to create Lingano, a project to help me with learning
+      <p>So I&nbsp;started to create <a href="http://lingano.com">Lingano</a>, a project to help me with learning
       vocabulary. It was a simple application, only for me, but a few days ago I&nbsp;told
-      my friend, Daniel Suchy, about it and we decided to improve this project and
+      to my co-workers about it and we decided to improve this project and
       make it public for everyone. It is a single page application developed with
       methodology Frontend First! We have implemented only a frontend part without an
       API and in the next few days we plan on finishing&nbsp;it.</p>
@@ -224,7 +228,7 @@
       start with user testing, and changes took us only a few minutes in
       this&nbsp;phase.</p>
 
-      <p>A&nbsp;good example is a CRM application, which I&nbsp;started to make a few months
+      <p>A&nbsp;good example is also a CRM application, which I&nbsp;started to make a few months
       ago for a marketing company. A&nbsp;detailed specification already existed before
       I&nbsp;joined the team. By the time that we had finished the first screen and some
       basic functionality and the client started using the application, he already
@@ -277,7 +281,7 @@
     would choose a different application.</p>
 
     <p>There are also some interesting projects, which can be helpful when creating
-    offline applications. One of them is PouchDB, the JavaScript Database inspired
+    offline applications. One of them is <a href="http://pouchdb.com/">PouchDB</a>, the JavaScript Database inspired
     by CouchDB, that is designed to run well within the browser. PouchDB was created
     to help web developers build applications that work equally as well offline as
     they do online. It enables applications to store data locally while offline, and
@@ -310,7 +314,7 @@
     the&nbsp;end.</p>
 
     <p>Designing applications is similar. In the beginning, I&nbsp;develop an
-    application with a Bootstrap or Foundation Zurb CSS framework. During the
+    application with a <a href="http://getbootstrap.com/">Bootstrap</a> or <a href="http://foundation.zurb.com/">Foundation Zurb</a> CSS framework. During the
     development the user interface is naturally constantly changing. At the end of
     development it is obvious exactly what the application should look like. Then
     the specific graphics are implemented. We know the exact structure of the user
@@ -322,11 +326,11 @@
 
    <p>The most frequently mentioned advantage of SPAs is a better user experience. User experience is greatly influenced by the performance of the application. And since the logic of the entire application runs on the client’s browser, the server side is not so busy. This makes the cost of running applications much lower.</p>
 
-   <p>Two years ago, LinkedIn switched its mobile version from Ruby On Rails to Node.js, and the entire application was built as an SPA. The savings were huge. Previously, they used 15 servers with 15 virtual servers on each physical machine. After the upgrade, they only needed 4 virtual servers that can handle double traffic. This is a tremendous cost savings.</p>
+   <p>Two years ago, LinkedIn switched its mobile version from Ruby On Rails to Node.js, and the entire application was built as an SPA. The savings were <a href="http://venturebeat.com/2011/08/16/linkedin-node/">huge</a>. Previously, they used 15 servers with 15 virtual servers on each physical machine. After the upgrade, they only needed 4 virtual servers that can handle double traffic. This is a tremendous cost savings.</p>
 
    <h3>REST API</h3>
 
-   <p>Single-page applications usually consist of two independent parts: the front-end part and the REST API, which only forwards requests to a database. Some applications can communicate directly from frontend with a remote database via REST API. For example, the famous NoSQL database ElasticSearch has REST API, so we can communicate with it straight from the client side, and we don’t even need to build a server side for the application. Another example is MongoLab, DaaS  (database as a service), which offer REST API for access to MongoDB database data.</p>
+   <p>Single-page applications usually consist of two independent parts: the front-end part and the REST API, which only forwards requests to a database. Some applications can communicate directly from frontend with a remote database via REST API. For example, the famous NoSQL database <a href="http://www.elasticsearch.org/">ElasticSearch</a> has REST API, so we can communicate with it straight from the client side, and we don’t even need to build a server side for the application. Another example is <a href="https://mongolab.com">MongoLab</a>, DaaS  (database as a service), which offer REST API for access to MongoDB database data.</p>
 
    <p>When we build a single-page application, we usually create three different projects: the first one is the front-end for common users, the second one is the administration and the third one is the API for the server part. This is great, because all other applications can communicate with us via the same REST API, so if we create a special native app for mobile later, this app can use the same API again and we don’t need to spend time building a special server part for the mobile app, which is definitely great.</p>
    <p>These are the major advantages of using the SPA and Frontend First! methodology. There are many more advantages, but these are the most important.</p>
@@ -335,34 +339,34 @@
 
   <h2>Recommend tools</h2>
 
-   <p>The next part of my talk will be about the development stack, which we use for our projects. We use AngularJS for the client side and Node.js for the server side. But there are some other great tools and technologies, which I would like to talk about. Some of these tools are useful not only for SPA, but I have decided to talk about them because I believe a complete ecosystem is the most important.</p>
+   <p>The next part of my talk will be about the development stack, which we use for our projects. We use <a href="http://angularjs.org/">AngularJS</a> for the client side and <a href="http://nodejs.org/">Node.js</a> for the server side. But there are some other great tools and technologies, which I would like to talk about. Some of these tools are useful not only for SPA, but I have decided to talk about them because I believe a complete ecosystem is the most important.</p>
 
   <h3>Nodejitsu</h3>
 
-  <p>Our projects are usually hosted on Nodejitsu. I have never seen a cloud hosting, where I can deploy my application so easily. Every time I need to release a new version of the application publicly, I only need type this command: jitsu deploy. Jitsu is a special npm program for communication with Nodejitsu. All dependencies are specified in a configuration file package.json including commands for compiling the TypeScript files or downloading dependencies with Bower, for example.</p>
+  <p>Our projects are usually hosted on <a href="https://www.nodejitsu.com/">Nodejitsu</a>. I have never seen a cloud hosting, where I can deploy my application so easily. Every time I need to release a new version of the application publicly, I only need type this command: jitsu deploy. Jitsu is a special npm program for communication with Nodejitsu. All dependencies are specified in a configuration file package.json including commands for compiling the TypeScript files or downloading dependencies with Bower, for example.</p>
   <p>One simple command for everything, it is so easy. Nodejitsu has many other great and important features, for example every time when you release a new public version, a snapshot of the current version is created. So if something is wrong, you can easily go back. Or you can have your own private npm repository here, which is very useful.</p>
 
 
   <h3>Bower, ComponentJS and npm</h3>
 
-  <p>For package management, we use 3 tools. On the server side, there is of course a great Node Package Manager. On the client side, we use two tools: Bower from Twitter and ComponentJS from TJ Holowaychuk.</p>
+  <p>For package management, we use 3 tools. On the server side, there is of course a great <a href="https://npmjs.org/">npm</a>. On the client side, we use two tools: <a href="http://bower.io/">Bower</a> from Twitter and <a href="http://component.io/">ComponentJS</a> from TJ Holowaychuk.</p>
   <p>Bower is the standard now. There are more than four thousand components available in the repository. We manage all AngularJS modules, Angular UI and Twitter Bootstrap by Bower. When you need to download a library, just type this command and it will be downloaded. When you want update a library, just type this and that’s all.</p>
   <p>We also use ComponentJS, which was released a year ago. There are more than thousand components now. These components are usually very small and solve simple tasks like file uploading, resizing images or handling local storage. That is why we don’t need to use libraries like jQuery, because when we need some special jQuery function, it is available in ComponentJS and so we don’t need to download the full jQuery library when we just want to use some simple feature.</p>
 
   <h3>Testing tools</h3>
 
   <p>I also need some tools for testing. In most of my single-page applications, I use 3 types of tests.</p>
-  <p>The first type is unit tests. I do not try to have 100% of the application covered with unit tests, but there are some features of the application which should be covered with them. Especially when a feature is frequently changed or has many different inputs. There are many JavaScript frameworks for unit tests, I think the best is Mocha. It supports many assertion styles, synchronous and asynchronous tests and exports for continuous integration.</p>
-  <p>The second type of tests are integration tests. I use them for testing APIs and I use the tool Supertest for them. The package Supertest is designed for the Node framework Express, which is also used by LinkedIn and MySpace. This is how our integration tests look when we test a special API resource. Supertest creates an instance of our Express app and calls some URLs, then it compares the retrieved information like the HTTP code, headers and body content with the expected values.</a>
+  <p>The first type is unit tests. I do not try to have 100% of the application covered with unit tests, but there are some features of the application which should be covered with them. Especially when a feature is frequently changed or has many different inputs. There are many JavaScript frameworks for unit tests, I think the best is <a href="http://visionmedia.github.io/mocha/">Mocha</a>. It supports many assertion styles, synchronous and asynchronous tests and exports for continuous integration.</p>
+  <p>The second type of tests are integration tests. I use them for testing APIs and I use the tool <a href="https://github.com/visionmedia/supertest">Supertest</a> for them. The package Supertest is designed for the Node framework Express, which is also used by LinkedIn and MySpace. This is how our integration tests look when we test a special API resource. Supertest creates an instance of our Express app and calls some URLs, then it compares the retrieved information like the HTTP code, headers and body content with the expected values.</a>
   <p>For our AngularJS app, we use E2E tests with a special AngularJS tool Scenario Runner. This tool is very similar to Selenium. It tries to simulate user actions. For example we have this scenario: a user go to the detail of some vocabulary, then they click on its name, change the name and save it. And then we test if everything was alright and if the name of the vocabulary was really changed.</p>
-  <p>We need to run these unit or E2E tests in browser environments and this is why we also use a tool called Karma, previously known as Testacular. It is a test runner for JavaScript and with this tool we can automatically run tests within the most popular browsers. Karma has many useful options, one of them is autoWatch directive. Whenever I work on an application I'm developing, I also start Karma with autoWatch so that every time the file is saved, all tests are run and I can immediately verify that the changes didn’t break the other features.</p>
-  <p>To run our tests automatically, we need continuous integration tools. There are many of them, for example Jenkis is very famous. But we use Travis CI for several reasons, the most important reason being that it is supported by Nodejitsu and is very simple. When you want to start with Trevis CI on Nodejitsu, you only need a few minutes. Trevis is free for open source, but there are also plans for private repositories.</p>
+  <p>We need to run these unit or E2E tests in browser environments and this is why we also use a tool called <a href="http://karma-runner.github.io/">Karma</a>, previously known as Testacular. It is a test runner for JavaScript and with this tool we can automatically run tests within the most popular browsers. Karma has many useful options, one of them is autoWatch directive. Whenever I work on an application I'm developing, I also start Karma with autoWatch so that every time the file is saved, all tests are run and I can immediately verify that the changes didn’t break the other features.</p>
+  <p>To run our tests automatically, we need continuous integration tools. There are many of them, for example Jenkis is very famous. But we use <a href="https://travis-ci.org/">Travis CI</a> for several reasons, the most important reason being that it is supported by Nodejitsu and is very simple. When you want to start with Trevis CI on Nodejitsu, you only need a few minutes. Trevis is free for open source, but there are also plans for private repositories.</p>
 
   <h3>Other tools</h3>
 
-  <p>We use the CSS preprocessor LESS and framework Bootstrap. A few days ago a new version of Bootstrap, the third version, was released and this version is mobile first. All of my applications in the last year have been built with Bootstrap and the changes made in the third version are also very important for Lingano because we have a free mobile version of our app.</p>
-  <p>A great tool for scaffolding is Yeoman. When you develop a single-page or any other application, you need to do several tasks again and again. For example if you want to create a new controller, you have to create a new file, add the path of this file to the layout template, create a new template for the controller view and so on. It is boring to repeat these tasks and that is why Yeoman exists. Yeoman can help you to create a generator for these tasks or you can use one of the many pre-existing generators. You can find generators there for Angular, Ember or Backbone and these generators can be modified for your specific requirements.</p>
-  <p>Grunt is very important tool for building single page apps. It is a JavaScript task runner. It has a repository with many plugins which you can immediately use. Grunt is helpful for tasks like minifications, compiling LESS, livereload features, and compiling CoffeeScript files with the support of JsHint to check coding standards. Today, there are more than a thousand similar plugins.</p>
+  <p>We use the CSS preprocessor <a href="http://lesscss.org/">LESS</a> and framework <a href="http://getbootstrap.com/">Bootstrap</a>. A few days ago a new version of Bootstrap, the third version, was released and this version is mobile first. All of my applications in the last year have been built with Bootstrap and the changes made in the third version are also very important for Lingano because we have a free mobile version of our app.</p>
+  <p>A great tool for scaffolding is <a href="http://yeoman.io/">Yeoman</a>. When you develop a single-page or any other application, you need to do several tasks again and again. For example if you want to create a new controller, you have to create a new file, add the path of this file to the layout template, create a new template for the controller view and so on. It is boring to repeat these tasks and that is why Yeoman exists. Yeoman can help you to create a generator for these tasks or you can use one of the many pre-existing generators. You can find generators there for Angular, Ember or Backbone and these generators can be modified for your specific requirements.</p>
+  <p><a href="http://gruntjs.com/">Grunt</a> is very important tool for building single page apps. It is a JavaScript task runner. It has a repository with many plugins which you can immediately use. Grunt is helpful for tasks like minifications, compiling LESS, livereload features, and compiling CoffeeScript files with the support of JsHint to check coding standards. Today, there are more than a thousand similar plugins.</p>
 
   <hr>
 
